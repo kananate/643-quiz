@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+/*on importe plusieurs police google*/
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,400i|Cormorant:400,700|Overpass');
+
+/*police de body sur les trois exercices*/
+@font-face {
+	font-family: "Arvo";
+	src: url("fonts-glossaire/Arvo/Arvo-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/*polices premier exercice*/
+@font-face {
+	font-family: "Cabin_Sketch";
+	src: url("fonts-glossaire/Cabin_Sketch/CabinSketch-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Cagliostro";
+	src: url("fonts-glossaire/Cagliostro/Cagliostro-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Comfortaa";
+	src: url("fonts-glossaire/Comfortaa/Comfortaa-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/*fin police exo 1*/
+
+
+/*polices deuxième exercice*/
+@font-face {
+	font-family: "Dosis";
+	src: url("fonts/Dosis/Dosis-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Exo_2";
+	src: url("fonts/Exo_2/Exo_2-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Exo_2";
+	src: url("fonts/Exo_2/Exo_2-italic.ttf") format("truetype");
+	font-style: italic;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Inconsolata";
+	src: url("fonts/Inconsolata/Inconsolata-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Inconsolata";
+	src: url("fonts/Inconsolata/Inconsolata-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: bold;
+}
+
+/*fin polices deuxième exercice*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Arvo", serif;
+    background: linear-gradient(to bottom, #E7E3CF .1em, transparent .1em);
+	background-size: 100% 1.285714285714286em;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quiz-box {
+    width: 600px;
+    /* height: 500px; */
+    margin: 0 auto;
+    background-color: #eee;
+    padding: 10px 50px 50px 50px;
+    border: 3px solid #ccebee;
+    border-radius: 5px;
+    outline: 10px dashed #ccebee;	
+	outline-offset: -6px;
+	border: 6px solid #ccebee;
+    
+}
+
+.quiz-box h1 {
+    width: 100%;
+    font-family: "Cabin_Sketch", sans-serif;
+    font-size: 4em;
+    text-align: center;
+    margin: 40px 0;  
+}
+
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quiz-header #progress {
+    color: #2b2b2b;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.quiz-header #count-down {
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: rgb(0, 183, 255);
+    padding: 5px;
+    margin: 1px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.quiz-box #question {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: blue;
+    border: 1px solid #777;
+    border-width: 1px 0;
+    padding: 5px 0;
+}
+
+.buttons {
+    margin: 1.5rem 0 4rem 0;
+}
+
+.btn {
+    text-align: left;
+    background-color: #ddd;
+    width: 100%;
+    font-size: 1.8rem;
+    color: var(--black);
+    border: 1px solid #ccebee;
+    border-radius: 5px;
+    margin: 7px 0;
+    padding: 1rem;
+    outline: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #ccebee;
+    font-weight: bold;
+}
+
+.btn:active {
+    background-color: var(--color-sec);
+}
+
+#score {
+    color: var(--black);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.quiz-repeat { 
+    text-align: center;
+    margin: 0 auto;
+}
+
+.quiz-repeat a {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #0f0404;
+    text-decoration: none;
+    background-color: #ccebee;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.quiz-repeat a:hover {
+    background-color: #ccebee;
+}
+.logo a i {
+    font-size: xx-large;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.fa-solid, .fas {
+    font-weight: 900;
+}
+
+/********scroll*******/
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	width: 10px;
+	background: #212529;
+	border-left: 0 solid white;
+	border-right: 0 solid white;
+}
+
+
+
+::-webkit-scrollbar-thumb {
+	background: #80b0f7;
+	width: 0;
+	height: 35%;
+	transition: 0.5s ease;
+	cursor: pointer;
+}
