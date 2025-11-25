@@ -142,6 +142,18 @@ let questions = [
    
     new Question(
         "What is bracket pair colorization?", ["outil pour changer la couleur des crochets", "formatteur de code", "debuggeur de code", "fonctionnalité pour les parenthéses, crochets et accolades"], "fonctionnalité pour les parenthéses, crochets et accolades"
+    ), new Question(
+        "Qu'est-ce qu'une extension dans Visual Studio Code ?", ["une theme de couleur", "Une langage de programmation", "un module complémentaire qui ajoute une noubelle fonctionnalité", "une fonction intégrée"], "un module complémentaire qui ajoute une noubelle fonctionnalité"
+    ),
+    new Question(
+        "Quelle est la différence entre désactiver et désinstaller une extension ?", ["pas de difference", "pas active du tout", "tous les deux restent actifs", "Desactiver reste installer et désinstaller le supprime"], "Desactiver reste installer et désinstaller le supprime"
+    ),
+    new Question(
+        "Quel filtre utiliser pour trouver des extensions liées à la science des données ?", ["data science", "@data-science", "@cat:data science", "@category: data science"], "@category: data science"
+    ), 
+   
+    new Question(
+        "Quel filtre utiliser pour trier les extensions par note ?", ["sort rationg", "@rating:sort", "@cat:rat", "@sort:rating"], "@sort:rating"
     )
 ];
 
