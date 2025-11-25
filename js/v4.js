@@ -81,7 +81,7 @@ function showScores() {
     <h2 id='score'> Your scored: ${quiz.score} of ${quiz.questions.length}</h2>
     
     <div class="quiz-repeat">
-        <a href="v1.html">Réessayer le Quiz</a>
+        <a href="v4.html">Réessayer le Quiz</a>
     </div>
     `;
     let quizElement = document.getElementById("quiz");
@@ -92,22 +92,17 @@ function showScores() {
 let questions = [
   
     new Question(
-        "Lorsque vous ________ un dossier dans l'Explorateur, vous affichez tous les fichiers et dossiers qu'il contient. ?", ["developpez", "reduisez","factorisez","marquez"],"developper"
+        "Qu'est-ce qu'une extension dans Visual Studio Code ?", ["une theme de couleur", "Une langage de programmation", "un module complémentaire qui ajoute une noubelle fonctionnalité", "une fonction intégrée"], "un module complémentaire qui ajoute une noubelle fonctionnalité"
     ),
     new Question(
-        "Quand avez-vous besoin d'actualiser manuellement l'Explorateur dans Visual Studio Code ?", ["Aprés avoir créer un dossier", "aprés modification d'un fichier", "quanc on ouvre un nouveau fichier", "lorsque sa vue ne correspond pas à la structure actuelle de votre projet sur le système de fichiers"], "lorsque sa vue ne correspond pas à la structure actuelle de votre projet sur le système de fichiers"
+        "Quelle est la différence entre désactiver et désinstaller une extension ?", ["pas de difference", "pas active du tout", "tous les deux restent actifs", "Desactiver reste installer et désinstaller le supprime"], "Desactiver reste installer et désinstaller le supprime"
     ),
     new Question(
-        "Quel est l'objectif principal de l'outil de recherche dans Visual Studio Code ?", ["debbuger le code", "naviguer dans les fichier", "editer des fichiers", "recherche de texte et de motif à l'aide du code"], "recherche de texte et de motif à l'aide du code"
-    ),
+        "Quel filtre utiliser pour trouver des extensions liées à la science des données ?", ["data science", "@data-science", "@cat:data science", "@category: data science"], "@category: data science"
+    ), 
+   
     new Question(
-        "Quand faut-il activer l'option « Respecter la casse » dans la recherche ?", ["correspondance majuscules/minuscules", "utiliser une expression régulière", "utiliser un motif","correspondance des mots entiers"], "correspondance des mots entiers"
-    ),
-    new Question(
-        "Que pouvez-vous utiliser pour spécifier des modèles de recherche complexes permettant de trouver des correspondances dans votre code ?", ["conditions réguliéres", "motif réguliers", "séquences réguliers", "expressions régulieres"], "expressions régulieres"
-    ),
-    new Question(
-        "Quelle commande pouvez-vous utiliser pour ouvrir des fichiers et des dossiers dans Visual Studio Code directement depuis le terminal ?", ["open", "vscode", "code", "shut"], "code"
+        "Quel filtre utiliser pour trier les extensions par note ?", ["sort rationg", "@rating:sort", "@cat:rat", "@sort:rating"], "@sort:rating"
     )
 ];
 
@@ -119,7 +114,7 @@ displayQuestion();
 
 
 // Add A CountDown for the Quiz
-let time = 2;
+let time = 1;
 let quizTimeInMinutes = time * 60 * 60;
 let quizTime = quizTimeInMinutes / 60;
 

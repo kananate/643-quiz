@@ -81,7 +81,7 @@ function showScores() {
     <h2 id='score'> Your scored: ${quiz.score} of ${quiz.questions.length}</h2>
     
     <div class="quiz-repeat">
-        <a href="v1.html">Réessayer le Quiz</a>
+        <a href="vpro.html">Réessayer le Quiz</a>
     </div>
     `;
     let quizElement = document.getElementById("quiz");
@@ -92,23 +92,40 @@ function showScores() {
 let questions = [
   
     new Question(
-        "Lorsque vous ________ un dossier dans l'Explorateur, vous affichez tous les fichiers et dossiers qu'il contient. ?", ["developpez", "reduisez","factorisez","marquez"],"developper"
+        "Qu'est-ce qu'un code snippet?", ["une modéle de morceau de code reutilisable", "une bloc de code non utilisable", "un module complémentaire qui ajoute une noubelle fonctionnalité", "une fonction intégrée"], "une modéle de morceau de code reutilisable"
     ),
     new Question(
-        "Quand avez-vous besoin d'actualiser manuellement l'Explorateur dans Visual Studio Code ?", ["Aprés avoir créer un dossier", "aprés modification d'un fichier", "quanc on ouvre un nouveau fichier", "lorsque sa vue ne correspond pas à la structure actuelle de votre projet sur le système de fichiers"], "lorsque sa vue ne correspond pas à la structure actuelle de votre projet sur le système de fichiers"
+        "Où trouver des extraits de code dans Visual Studio Code ?", ["dans le marketplace des extensions",
+             "dans l'ensemble des fonctions intégrées des code snippet", "liste de personnalisation définie", "Tous les options sont vraies"], "Tous les options sont vraies"
     ),
     new Question(
-        "Quel est l'objectif principal de l'outil de recherche dans Visual Studio Code ?", ["debbuger le code", "naviguer dans les fichier", "editer des fichiers", "recherche de texte et de motif à l'aide du code"], "recherche de texte et de motif à l'aide du code"
+        "Quel tabstop indique la position finale du curseur dans un extrait de code personnalisé ?", ["$1", "$0", "$2", "$3"], "$0"
+    ), 
+   
+    new Question(
+        "À quoi sert l'extension Live Server ?", ["aperçu en temps réel de notre projet dans le navigateur", "aperçu dans vscode", "aperçu dans le terminal", "ça n'hexiste pas"], "aperçu en temps réel de notre projet dans le navigateur"
+    ), new Question(
+        "À quoi sert l'extension preview ?", ["aperçu en temps réel de notre projet dans le navigateur", "aperçu en temps réel de notre projet dans vscode", "aperçu danslz terminal", "ça n'hexiste pas"], "aperçu en temps réel de notre projet dans vscode"
     ),
     new Question(
-        "Quand faut-il activer l'option « Respecter la casse » dans la recherche ?", ["correspondance majuscules/minuscules", "utiliser une expression régulière", "utiliser un motif","correspondance des mots entiers"], "correspondance des mots entiers"
+        "À quoi servent les abréviations Emmet ?", ["écrire rapidement et efficacement du html", "créer de nouvelles balises", "créer de nouvelles fonctionnalités","comme son nom l'indique émet"], "écriez rapidement et efficacement du html"
     ),
     new Question(
-        "Que pouvez-vous utiliser pour spécifier des modèles de recherche complexes permettant de trouver des correspondances dans votre code ?", ["conditions réguliéres", "motif réguliers", "séquences réguliers", "expressions régulieres"], "expressions régulieres"
+        "Comment ajouter un dépôt GitHub distant à votre dépôt local dans Visual Studio Code ?", ["par le clonage", "selectionner le dépôt dans la liste ds vscode", "les deux précédents", "par push"], "les deux précédents"
+    ),new Question(
+        "Où trouver l'option permettant de passer à une nouvelle branche dans Visual Studio Code ?", ["bar d'activité", "bar de status", "bar des menus", "autres"], "bar de status"
+    ) ,
+    new Question(
+        "Quelle est la signification du code de contrôle de source U ?", ["mattraqued", " detracked", "untracked", "deleted"], "untracked"
     ),
     new Question(
-        "Quelle commande pouvez-vous utiliser pour ouvrir des fichiers et des dossiers dans Visual Studio Code directement depuis le terminal ?", ["open", "vscode", "code", "shut"], "code"
-    )
+        "Quelle est la signification du code de contrôle de source M ?", ["mattraqued", " detracked", "untracked", "modified"], "modified"
+    ),new Question(
+        "Quelle est la signification du code de contrôle de source D ?", ["mattraqued", " detracked", "untracked", "deleted"], "deleted"
+    ),
+    new Question(
+        "Où trouver l'option permettant de passer à une nouvelle branche dans Visual Studio Code ?", ["bar d'activité", "bar de status", "bar des menus", "autres"], "bar de status"
+    ) 
 ];
 
 // INITIALIZE quiz
@@ -119,7 +136,7 @@ displayQuestion();
 
 
 // Add A CountDown for the Quiz
-let time = 2;
+let time = 5;
 let quizTimeInMinutes = time * 60 * 60;
 let quizTime = quizTimeInMinutes / 60;
 

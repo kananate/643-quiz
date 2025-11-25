@@ -90,58 +90,26 @@ function showScores() {
 
 // create questions here
 let questions = [
+  
     new Question(
-        "A quoi sert un editeur de texte?", ["Créer et éditer des documents", "Naviguer sur internet", "Ecrire et editer du code", "Jouer au jeux videos"], "Ecrire et editer du code"
+        "Que verrez-vous si vous sélectionnez votre code et qu'il est indenté avec des espaces ?", ["asterix", "virgule", "obelix", "petits points"], "petits points"
     ),
     new Question(
-        "Quel est le nom de la barre latérale verticale située à gauche de la fenêtre principale qui permet d'accéder rapidement aux fonctionnalités couramment utilisées ?", ["Barre de status", "Barre d'activité", "Barre d'outils", "Barre d'options"], "Barre d'activité"
+        "Quel est le raccourci clavier permettant d'ouvrir le panneau Paramètres dans Visual Studio Code ?", ["ctrl s", "ctrl +", "ctrl ,", "ctrl x"], "ctrl ,"
     ),
     new Question(
-        "Quel est le nom de la barre horizontale située au bas de la fenêtre principale qui fournit des informations sur l'état actuel de l'éditeur de code ?", ["Barre de status", "Barre d'activité", "Barre d'outils", "Barre d'options"], "Barre de status"
-    ),
-    new Question(
-        "À quoi sert la mini-carte?", ["Observer erreurs et avertissement dans un fichier", "avoir une vision miniature et naviguer plus vite", "Juste pour la déco", "Tous les options"], "avoir une vision miniature et naviguer plus vite"
-    ),
-    new Question(
-        "Quel est l'objectif principal de l'Explorer dans Visual Studio Code ?", ["Débogguer le code", "Editer des fichiers", "Lancer le code", "tout ce qui précède"], "Lancer le code"
-    ),
-    new Question(
-        "Vous pouvez créer, modifier, déplacer, renommer et supprimer ______________ dans l'Explorateur.?", ["cliquer deposer", "double clique", "clique droit et ouvrir", "naviguer et manager les fichiers du projets"], "naviguer et manager les fichiers du projets"
-    ),
-    new Question(
-        "Lorsque vous ________ un dossier dans l'Explorateur, vous affichez tous les fichiers et dossiers qu'il contient. ?", ["developpez", "reduisez"],"developper"
-    ),
-    new Question(
-        "Quand avez-vous besoin d'actualiser manuellement l'Explorateur dans Visual Studio Code ?", ["Aprés avoir créer un dossier", "aprés modification d'un fichier", "quanc on ouvre un nouveau fichier", "lorsque sa vue ne correspond pas à la structure actuelle de votre projet sur le système de fichiers"], "lorsque sa vue ne correspond pas à la structure actuelle de votre projet sur le système de fichiers"
-    ),
-    new Question(
-        "Quel est l'objectif principal de l'outil de recherche dans Visual Studio Code ?", ["debbuger le code", "naviguer dans les fichier", "editer des fichiers", "recherche de texte et de motif à l'aide du code"], "recherche de texte et de motif à l'aide du code"
-    ),
-    new Question(
-        "Quand faut-il activer l'option « Respecter la casse » dans la recherche ?", ["correspondance majuscules/minuscules", "utiliser une expression régulière", "utiliser un motif","correspondance des mots entiers"], "correspondance des mots entiers"
-    ),
-    new Question(
-        "Que pouvez-vous utiliser pour spécifier des modèles de recherche complexes permettant de trouver des correspondances dans votre code ?", ["conditions réguliéres", "motif réguliers", "séquences réguliers", "expressions régulieres"], "expressions régulieres"
-    ),
-    new Question(
-        "Quelle commande pouvez-vous utiliser pour ouvrir des fichiers et des dossiers dans Visual Studio Code directement depuis le terminal ?", ["open", "vscode", "code", "shut"], "code"
-    ),
-    new Question(
-        "Par défaut, si vous avez un dossier ouvert dans Visual Studio Code, l'emplacement du terminal correspondra à l'emplacement du dossier.", ["Vrai", "Faux", "ni vrai", "ni faux"], "vrai"
-    ),
-    new Question(
-        "Quelle commande devez-vous entrer dans le terminal pour ouvrir le dossier actuel dans Visual Studio Code ?", ["code", "code .", "code ..", "code #"], "code ."
-    ),
-    new Question(
-        "Comment vérifier la version de Visual Studio Code dans le terminal ?", ["code --version", "code --v", "code --vsc", "code --vscode"], "code --version"
-    ),
-   
-    new Question(
-        "Qu'est-ce qu'un thème de couleurs ?", ["palette de couleur pour la synthaxe", "style prédéfini pour la totalité de l'éditeur", "chemin pour changer la taille de la police", "fonctionnalité pour debbugger le code"], "style prédéfini pour la totalité de l'éditeur"
+        "Quels sont les deux types d'espaces de travail dans Visual Studio Code ?", ["dossier unique et dossiers de travail à racines multiples", "dossier multiple et dossiers de travail à racines multiples", "dossier unique et dossiers de travail à racines unique", "dossier unique seulement"], "dossier unique et dossiers de travail à racines multiples"
     ), 
    
     new Question(
-        "What is bracket pair colorization?", ["outil pour changer la couleur des crochets", "formatteur de code", "debuggeur de code", "fonctionnalité pour les parenthéses, crochets et accolades"], "fonctionnalité pour les parenthéses, crochets et accolades"
+        "Qu'est-ce que le mode Zen dans Visual Studio Code ?", ["outil de deboggage", "formatteur de code", "debuggeur de code", "une fonctionnalité qui masque la barre latérale et de status pour une expérience de codage sans distraction"], "une fonctionnalité qui masque la barre latérale et de status pour une expérience de codage sans distraction"
+    ),
+    new Question(
+        "Comment passer du deuxième groupe d'éditeurs de gauche à droite lorsque plusieurs groupes d'éditeurs sont ouverts ?", ["ctrl 1", "ctrl 2", "ctrl 3", "ctrl 4"], "ctrl 2"
+    ), 
+   
+    new Question(
+        "Qu'est-ce que le Sticky Scroll dans Visual Studio Code ?", ["permet de visualiser les premières lignes des scopes imbriqués actuellement visibles en haut de l'éditeur,", "permet de visualiser les derniéres lignes des scopes imbriqués actuellement visibles en bas de l'éditeur,", "debuggeur de code", "une fonctionnalité qui masque la barre latérale et de status pour une expérience de codage sans distraction"], "permet de visualiser les premières lignes des scopes imbriqués actuellement visibles en haut de l'éditeur,"
     )
 ];
 
@@ -153,7 +121,7 @@ displayQuestion();
 
 
 // Add A CountDown for the Quiz
-let time = 10;
+let time = 3;
 let quizTimeInMinutes = time * 60 * 60;
 let quizTime = quizTimeInMinutes / 60;
 
